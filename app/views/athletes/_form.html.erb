@@ -1,0 +1,35 @@
+<%= form_for [@team, @athlete] do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name, required: true %>
+		<br />
+		<%= f. label :skill %>
+		<%= f.text_field :skill, required: true %>
+		<br />
+
+		<%= f. label :crazy_scale %>
+	
+		<%= f.select :crazy_scale, (1..10).to_a %>
+	
+		<br />
+		<%= f.label :very_crazy %>
+		<%= f.check_box :very_crazy %>
+	
+		<br />
+		<%= f.label :could_be_normal %>
+		<%= f.check_box :could_be_normal %>
+
+		<br />
+		<%= f.label :funny %>
+		<%= f.check_box :funny %>
+
+		<br />
+		<%= f.label :age %>
+		<%= f.select :age, [1..100] %>
+	
+		<br />
+		<%= f.label :dangerous %>
+		<%= f.check_box :dangerous %>
+	
+		<br />
+		<%= f.submit %>
+	<% end %>

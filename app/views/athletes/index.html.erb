@@ -1,0 +1,17 @@
+<h1> <%= @team.name %> - All athlete </h1>
+
+<% if @athlete.any? %>
+	<!-- loop the cars and display them -->
+	<ul>
+
+	</ul>
+	<% @athlete.each do |car| %>
+		<li class='athlete-info-text'> <%= athlete.info %> <%= link_to 'show', person_car_path(@person, car) %> </li>
+	<% end %>
+<% else %>
+	<!-- display no cars message -->
+	<h3>No athlete, Please Create One.</h3>
+<% end %>
+
+<%= link_to 'new athlete', new_team_athlete_path(@person) %>
+

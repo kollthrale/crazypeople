@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  skill: MyString
+  crazy_scale: 1
+  very_crazy: false
+  could_be_normal: false
+  funny: false
+  age: 1
+  dangerous: false
+  belongs_to: 
+
+two:
+  name: MyString
+  skill: MyString
+  crazy_scale: 1
+  very_crazy: false
+  could_be_normal: false
+  funny: false
+  age: 1
+  dangerous: false
+  belongs_to: 

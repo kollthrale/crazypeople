@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sport: MyString
+  country: 
+  medals_won: 1
+  good_or_not: false
+  color: MyString
+  loud: false
+
+two:
+  sport: MyString
+  country: 
+  medals_won: 1
+  good_or_not: false
+  color: MyString
+  loud: false

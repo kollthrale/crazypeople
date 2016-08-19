@@ -1,0 +1,36 @@
+<% if @team.errors.any? %>
+	<ul> 
+		<% @team.errors.full_messages.each do |error| %>
+			<li> <%= error %> </li>
+		<% end %>
+	</ul>
+<% end %> 
+
+
+<%= form_for @team do |f| %>
+	<br />
+	<%= f.label :sport %>
+	<%= f.text_field :sport %>
+	<!-- <input type='text' name= 'person[name' /> -->
+
+	<br />
+	<%= f.label :country %>
+	<%= f.text_field :country %>
+	<br />
+
+	<%= f.label :medals_won %>
+	<%= f.select :medals_won, (1..1000).to_a %>
+
+	<br />
+	<%= f.label :color %>
+	<%= f.select :color, Team.colors %>
+	
+	<br />
+	<%= f.label :loud %>
+	<%= f.check_box :loud %>
+	
+	<%= f.submit %>
+<% end %>
+
+
+<!-- 	f.number_field -->

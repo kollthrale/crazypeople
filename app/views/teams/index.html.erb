@@ -1,0 +1,18 @@
+<h1>Show All Teams</h1>
+
+<% if @teams.any? %>
+	<ul>
+	<!-- Loop people and display --> 
+	<% @teams.each do |team| %>
+		<li><%= team.country %> <%= team.sport %>
+			<%= link_to 'Show Team', team_path(team) %>
+
+		</li>
+	<% end %> 
+	</ul>
+<% else %>
+	<p>No Teams Yet, add a team?</p>
+<% end %>
+
+
+<%= link_to 'Add A Team', new_team_path %>

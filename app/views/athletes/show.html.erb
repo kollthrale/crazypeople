@@ -1,0 +1,17 @@
+<h1> <%= @athlete.info %> </h1>
+
+
+<p> name: <%= @athlete.name %> </p>
+
+<p> skill: <%= @athlete.skill %> </p>
+
+
+<p> crazy_scale? <%= @athlete.crazy_scale %> </p>
+
+<p> very_crazy: <%= @ %>athlete.very_crazy </p>
+
+<%= link_to 'Edit', edit_team_athlete_path(@team, @athlete) %>
+<%= link_to 'DELETE', person_team_path(@team, @athlete), method: :delete, data: {confirm: 'Really you punk?'} %>
+
+<br />
+<p> <%= link_to 'All athletes', team_athlete_path(@team)  %> </p>

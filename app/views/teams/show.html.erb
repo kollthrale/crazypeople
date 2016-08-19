@@ -1,0 +1,29 @@
+<h1> Info For Team: <%= @team.sport %> </h1>
+
+<table> 
+	<thead>
+			<tr>
+			<th>Country</th>
+			<th>Medals Won</th>
+			<th>Team Color</th>
+			<th>Loud</th>
+		</tr>
+	</thead>
+<tbody>
+		<tr> 
+			<td> <%= @team.country %> </td>
+			<td> <%= @team.medals_won %> </td>
+			<td> <%= @team.color %> </td>
+			<td> <%= @team.loud %> </td>
+		</td>
+	</tbody>
+</table>
+
+<%= link_to 'edit user', edit_team_path(@team) %>
+
+<%= link_to 'Delete', team_path(@team), method: :delete %>
+
+<%= link_to "All athletes", team_athletes_path(@team) %>
+
+<br />
+<%= link_to 'All Teams', teams_path %>
